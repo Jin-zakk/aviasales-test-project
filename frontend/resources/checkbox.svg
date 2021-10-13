@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group-3">
+    <path d="M0 0L20 0L20 20L0 20L0 0Z" id="Rectangle-3-Copy" fill="#7F4156" fill-rule="evenodd" stroke="none" />
+    <g id="Group-5" transform="matrix(0.70710677 -0.70710677 0.70710677 0.70710677 3 9.485281)">
+      <path d="M0 0L2.35564 0L2.35564 7.61827L0 7.61827L0 0Z" transform="translate(0.26573405 0.26573405)" id="Rectangle-3" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M0 0L11.7343 0L11.7343 2.35564L0 2.35564L0 0Z" transform="translate(0.26573405 6.6811213)" id="Rectangle-4" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

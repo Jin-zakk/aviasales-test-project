@@ -1,0 +1,280 @@
+.ui-user-form {
+  width: 24vw;
+
+  &--is-final {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../../resources/man.svg');
+    background-position: top;
+    justify-content: center;
+  }
+
+  &__final-block {
+    font-family: Shnobel, sans-serif;
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+
+    s {
+      color: #7f4156;
+    }
+
+    strong {
+      font-size: 8vw;
+      font-weight: inherit;
+    }
+  }
+
+  &__form-title {
+    font-family: Shnobel, sans-serif;
+    line-height: 1.2;
+    font-size: 4vw;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2.4vw;
+  }
+
+  &__form-share-title,
+  &__form-email-title {
+    position: relative;
+    color: #fff;
+    font-size: 1.44vw;
+    font-family: sans-serif;
+
+    &::after {
+      font-size: 3.52vw;
+      font-family: Shnobel, sans-serif;
+      font-weight: 400;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: -4vw;
+    }
+  }
+
+  &__form-share-title::after {
+    content: '1.';
+  }
+
+  &__form-email-title::after {
+    content: '2.';
+  }
+
+  &__form-share-button,
+  &__form-button {
+    margin-top: 1.6vw;
+  }
+
+  &__form-share-buttons {
+    margin-top: 1.6vw;
+    margin-bottom: 1.6vw;
+  }
+
+  &__form-share-button {
+    width: 4.24vw;
+    height: 4.24vw;
+    margin: 0 1.14vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__form-share--is-shared,
+  &__form-email--is-emailed {
+    opacity: 0.5;
+    pointer-events: none;
+
+    .ui-user-form__form-email-title::after,
+    .ui-user-form__form-share-title::after {
+      top: -2vh;
+      content: url('../../resources/checkbox.svg');
+    }
+  }
+
+  &__form-email-input {
+    min-height: 4.4vw;
+    padding: 0.96vw 1.6vw;
+    margin-bottom: 1.6vw;
+    border: 0.16vw solid transparent;
+    border-radius: 4vw;
+    font-size: 1.44vw;
+    text-align: left;
+    width: 100%;
+    background: #fff;
+    transition: border-color 0.25s ease-out;
+    box-sizing: border-box;
+    margin-top: 1.2vw;
+    outline: none;
+  }
+
+  &__form-email-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2vw solid #fff;
+    color: #fff;
+    background: transparent;
+    max-height: 5.6vw;
+    min-width: 16.8vw;
+    min-height: 5.6vw;
+    font-size: 3.12vw;
+    padding: 0.56vw 3.2vw 0;
+    border-radius: 5.6vw;
+    cursor: pointer;
+    width: 80%;
+    font-family: Shnobel, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      background: #7f4156;
+    }
+
+    &:active {
+      color: #7f4156;
+      background: #fff;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 48vw;
+
+    &--is-final {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    &__final-block {
+      font-size: 8vw;
+
+      strong {
+        font-size: 16vw;
+      }
+    }
+
+    &__waiter,
+    &__form-title {
+      font-size: 8vw;
+    }
+
+    &__form-share-title,
+    &__form-email-title {
+      font-size: 2.88vw;
+
+      &::after {
+        font-size: 7.04vw;
+        left: -8vw;
+      }
+    }
+
+    &__form-share-button {
+      width: 8.48vw;
+      height: 8.48vw;
+      margin: 0 2.28vw;
+
+      &::after {
+        width: 8.24vw;
+        height: 8.24vh;
+      }
+    }
+
+    &__form-email-input {
+      min-height: 8.8vw;
+      padding: 1.92vw 3.2vw;
+      margin-bottom: 3.2vw;
+      border-width: 0.32vw;
+      border-radius: 8vw;
+      font-size: 2.88vw;
+      margin-top: 2.4vw;
+    }
+
+    &__form-email-button {
+      border-width: 0.4vw;
+      max-height: 11.2vw;
+      min-width: 33.6vw;
+      min-height: 11.2vw;
+      font-size: 6.24vw;
+      padding: 1.12vw 6.4vw 0;
+      border-radius: 11.2vw;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 88vw;
+
+    &--is-final {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    &__final-block {
+      font-size: 16vw;
+
+      strong {
+        font-size: 32vw;
+      }
+    }
+
+    &__waiter,
+    &__form-title {
+      font-size: 16vw;
+    }
+
+    &__form-share-title,
+    &__form-email-title {
+      font-size: 5.76vw;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__form-share-button {
+      width: 16.96vw;
+      height: 16.96vw;
+      margin: 0 3.36vw;
+
+      &::after {
+        width: 16.48vw;
+        height: 16.48vh;
+      }
+    }
+
+    &__form-email-input {
+      min-height: 17.6vw;
+      padding: 3.84vw 6.4vw;
+      margin-bottom: 6.4vw;
+      border-width: 0.64vw;
+      border-radius: 16vw;
+      font-size: 5.76vw;
+      margin-top: 4.8vw;
+    }
+
+    &__form-email-button {
+      border-width: 0.8vw;
+      max-height: 22.4vw;
+      min-width: 67.2vw;
+      min-height: 22.4vw;
+      font-size: 12.48vw;
+      padding: 2.24vw 12.8vw 0;
+      border-radius: 22.4vw;
+    }
+  }
+}
