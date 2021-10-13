@@ -14,7 +14,7 @@ const send = async <T>(
   body?: unknown
 ): Promise<T | undefined> => {
   try {
-    const response = await fetch(`http://localhost:9000/api/${url}`, {
+    const response = await fetch(`api/${url}`, {
       method,
       body: JSON.stringify(body),
       headers: {
