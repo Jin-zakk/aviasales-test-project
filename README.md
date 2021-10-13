@@ -1,4 +1,4 @@
-## Тестовое задание Aviasales Marketing ([full-stack](https://aviasales.recruitee.com/o/fullstack-developer))
+## Тестовое задание Aviasales Marketing ([full-stack](https://github.com/KosyanMedia/test-tasks/tree/master/marketing))
 
 ### Установка
 
