@@ -81,7 +81,7 @@ const UserForm: FC = (): JSX.Element => {
           [`${mainCls}--is-final`]: isShowFinal,
         },
       ]),
-    [isShared, isEmailed]
+    [isShowFinal]
   );
   const shareClasses = useMemo(
     () =>
